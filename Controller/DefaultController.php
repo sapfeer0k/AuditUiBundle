@@ -11,7 +11,7 @@ use Doctrine\ORM\QueryBuilder;
 use DataDog\PagerBundle\Pagination;
 use DataDog\AuditBundle\Entity\AuditLog;
 
-class AuditController extends Controller
+class DefaultController extends Controller
 {
     public function filters(QueryBuilder $qb, $key, $val)
     {
@@ -61,6 +61,13 @@ class AuditController extends Controller
             ['limit' => 25]);
 
         $em = $this->getDoctrine()->getManager();
+
+        $qb = $em->getRepository("DataDogAuditBundle:AuditLog")
+            ->createQueryBuilder('a')
+            ->addSelect('s', 't', 'b')
+            ->innerJoin('a.source', 's')
+            ->leftJoin('a.target', 't')
+            ->leftJoin('a.blame', 'b');
 
         $qb = $em->getRepository("DataDogAuditBundle:AuditLog")
             ->createQueryBuilder('a')
