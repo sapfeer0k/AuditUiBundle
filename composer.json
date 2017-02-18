@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "VouchedFor\\Bundle\\AuditBundle\\": "" }
+        "psr-4": { "VouchedFor\\AuditBundle\\": "" }
     }
 }
 
