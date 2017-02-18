@@ -1,0 +1,16 @@
+{
+    "name": "vouchedfor/audit-bundle",
+    "description": "UI for displaying Datadog audits for Symfony 3",
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/vouchedfor/AuditBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Stidwill"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "VouchedFor\\Bundle\\AuditBundle\\": "" }
+    },
+}
+

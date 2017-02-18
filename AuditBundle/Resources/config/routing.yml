@@ -1,0 +1,3 @@
+vouchedfor_audit_homepage:
+    path:     /
+    defaults: { _controller: VouchedForAuditBundle:Default:index }
