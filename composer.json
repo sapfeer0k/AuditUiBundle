@@ -10,7 +10,11 @@
         }
     ],
     "autoload": {
-        "psr-4": { "VouchedFor\\AuditBundle\\": "" }
+        "psr-4": { "VouchedFor\\Bundle\\AuditBundle\\": "" }
+    },
+    "require": {
+        "data-dog/audit-bundle": "^0.1.5",
+        "data-dog/pager-bundle": "^0.2.7"
     }
 }
 

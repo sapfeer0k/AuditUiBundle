@@ -69,13 +69,6 @@ class DefaultController extends Controller
             ->leftJoin('a.target', 't')
             ->leftJoin('a.blame', 'b');
 
-        $qb = $em->getRepository("DataDogAuditBundle:AuditLog")
-            ->createQueryBuilder('a')
-            ->addSelect('s', 't', 'b')
-            ->innerJoin('a.source', 's')
-            ->leftJoin('a.target', 't')
-            ->leftJoin('a.blame', 'b');
-
         $options = [
             'sorters' => ['a.loggedAt' => 'DESC'],
             'applyFilter' => [$this, 'filters'],
@@ -112,7 +105,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/audit/diff/{id}")
+     * @Route("/audit/diff/{id}", name="audit_audit_diff")
      * @Method("GET")
      * @Template
      */
