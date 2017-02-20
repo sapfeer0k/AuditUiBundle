@@ -1,6 +1,6 @@
 # Audit Ui Bundle
 
-This bundle creates a user interface for the audit log produced by [https://github.com/DATA-DOG/DataDogAudddedesedszdedseessdeszesitBundle](https://github.com/DATA-DOG/DataDogAuditBundle).
+This bundle creates a user interface for the audit log produced by [https://github.com/DATA-DOG/DataDogAuditBundle](https://github.com/DATA-DOG/DataDogAuditBundle).
 
 It is based on the example provided by that bundle, but implemented in a more generic, out-of-the-box reusable way.
 
