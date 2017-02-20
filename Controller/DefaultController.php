@@ -53,7 +53,7 @@ class DefaultController extends Controller
     /**
      * @Method("GET")
      * @Template
-     * @Route("/audit", name="audit")
+     * @Route("/audit", name="vouchedfor_audit_ui")
      */
     public function indexAction(Request $request)
     {
@@ -105,7 +105,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/audit/diff/{id}", name="audit_audit_diff")
+     * @Route("/audit/diff/{id}", name="vouchedfor_audit_ui_diff")
      * @Method("GET")
      * @Template
      */
