@@ -1,8 +1,8 @@
 {
-    "name": "vouchedfor/audit-bundle",
+    "name": "vouchedfor/audit-ui-bundle",
     "description": "UI for displaying Datadog audits for Symfony 3",
     "type": "symfony-bundle",
-    "homepage": "https://github.com/vouchedfor/AuditBundle",
+    "homepage": "https://github.com/vouchedfor/AuditUiBundle",
     "license": "MIT",
     "authors": [
         {
@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "VouchedFor\\AuditBundle\\": "" }
+        "psr-4": { "VouchedFor\\AuditUiBundle\\": "" }
     },
     "require": {
         "data-dog/audit-bundle": "^0.1.5",
