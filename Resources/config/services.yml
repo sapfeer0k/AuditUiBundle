@@ -1,6 +1,6 @@
 services:
     vouchedfor_audit.twig.extension:
-      class: VouchedFor\AuditBundle\Twig\AuditExtension
+      class: VouchedFor\AuditUiBundle\Twig\AuditExtension
       tags:
         - { name: twig.extension }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace VouchedFor\AuditBundle\DependencyInjection;
+namespace VouchedFor\AuditUiBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

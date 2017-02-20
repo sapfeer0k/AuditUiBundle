@@ -1,6 +1,6 @@
 <?php
 
-namespace VouchedFor\AuditBundle\Twig;
+namespace VouchedFor\AuditUiBundle\Twig;
 
 use DataDog\AuditBundle\Entity\AuditLog;
 
@@ -26,17 +26,17 @@ class AuditExtension extends \Twig_Extension
 
     public function audit(\Twig_Environment $twig, AuditLog $log)
     {
-        return $twig->render("VouchedForAuditBundle:Default:{$log->getAction()}.html.twig", compact('log'));
+        return $twig->render("VouchedForAuditUiBundle:Default:{$log->getAction()}.html.twig", compact('log'));
     }
 
     public function assoc(\Twig_Environment $twig, $assoc)
     {
-        return $twig->render("VouchedForAuditBundle:Default:assoc.html.twig", compact('assoc'));
+        return $twig->render("VouchedForAuditUiBundle:Default:assoc.html.twig", compact('assoc'));
     }
 
     public function blame(\Twig_Environment $twig, $blame)
     {
-        return $twig->render("VouchedForAuditBundle:Default:blame.html.twig", compact('blame'));
+        return $twig->render("VouchedForAuditUiBundle:Default:blame.html.twig", compact('blame'));
     }
 
     public function value(\Twig_Environment $twig, $val)

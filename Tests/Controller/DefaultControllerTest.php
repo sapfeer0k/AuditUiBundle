@@ -1,6 +1,6 @@
 <?php
 
-namespace VouchedFor\AuditBundle\Tests\Controller;
+namespace VouchedFor\AuditUiBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

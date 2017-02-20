@@ -1,6 +1,6 @@
 <?php
 
-namespace VouchedFor\AuditBundle\Controller;
+namespace VouchedFor\AuditUiBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
