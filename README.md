@@ -8,7 +8,7 @@ It is based on the example provided by that bundle, but implemented in a more ge
 
 First, install it with composer:
 
-    composer require vouchedfor/audit-ui-bundle
+    composer require vouchedfor/audit-ui-bundle:dev-master
 
 Then, add the following in your **AppKernel** bundles (assuming 'new DataDog\AuditBundle\DataDogAuditBundle(),' has been added previously).
 
@@ -34,7 +34,10 @@ Finally, add the routing (this assumes the route is prefixed with 'admin', that 
 
 ## Usage
 
-Navigate to **admin/audit** (assuming you've used the default routing above) to see the list of auditted changes.
+Navigate to **admin/audit** (assuming you've used the default routing above) to see the list of audited changes.
+
+## Overriding templates
+Templates (e.g. **diff.html.twig**) can be overridden at **app/Resources/VouchedForAuditUiBundle/views/Default**
 
 ## License
 
