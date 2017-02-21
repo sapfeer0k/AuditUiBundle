@@ -95,7 +95,7 @@ class DefaultController extends Controller
             Pagination::$filterAny => 'Any User',
             'null' => 'Unknown',
         ];
-        foreach ($em->getRepository('AppBundle:User')->findAll() as $user) {
+        foreach ($em->getRepository($this->getParameter('vouchedfor_audit_ui.user_class'))->findAll() as $user) {
             $users[$user->getId()] = (string)$user;
         }
 

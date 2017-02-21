@@ -24,6 +24,12 @@ Then, add the following in your **AppKernel** bundles (assuming 'new DataDog\Aud
         ...
     }
 
+Add the name of the class responsible for managing users to `config.yml`. The example below assumes it's **AppBundle\Entity\User**:
+
+    // app/config/config.yml
+    vouched_for_audit_ui:
+        user_class: AppBundle\Entity\User
+        
 Finally, add the routing (this assumes the route is prefixed with 'admin', that you'll probably want to protect behind a firewall in **security.yml**):
 
     // app/config/routing.yml
