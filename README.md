@@ -10,13 +10,14 @@ First, install it with composer:
 
     composer require vouchedfor/audit-ui-bundle:dev-master
 
-Then, add the following in your **AppKernel** bundles (assuming 'new DataDog\AuditBundle\DataDogAuditBundle(),' has been added previously).
+Then, add the following in your **AppKernel** bundles (note that 'new DataDog\AuditBundle\DataDogAuditBundle(),' may have been added previously).
 
     // app/AppKernel.php
     public function registerBundles()
     {
         $bundles = array(
             ...
+            new DataDog\AuditBundle\DataDogAuditBundle(),	// Only add this if you haven't previously done so
             new DataDog\PagerBundle\DataDogPagerBundle(),
             new VouchedFor\AuditUiBundle\VouchedForAuditUiBundle(),
             ...
