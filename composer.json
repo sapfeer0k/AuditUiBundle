@@ -1,5 +1,5 @@
 {
-    "name": "vouchedfor/audit-ui-bundle",
+    "name": "sapfeer0k/audit-ui-bundle",
     "description": "UI for displaying Datadog audits in Symfony 2/3",
     "type": "symfony-bundle",
     "homepage": "https://github.com/vouchedfor/AuditUiBundle",
@@ -14,7 +14,7 @@
     },
     "require": {
         "data-dog/audit-bundle": "^0.1.5",
-        "data-dog/pager-bundle": "^0.2.7"
+        "sapfeer0k/pager-bundle": "dev-master"
     }
 }
 
